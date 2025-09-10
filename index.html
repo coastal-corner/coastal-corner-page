@@ -10,12 +10,13 @@
     /* Reset */
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: 'Segoe UI', sans-serif; line-height:1.6; background:#fff8f0; color:#333; }
-    a { text-decoration:none; color:#fff; }
+    a { text-decoration:none; color:#b22222; }
 
     /* Header */
-    header { background:#b22222; color:white; padding:1rem 0; position:sticky; top:0; z-index:1000; }
+    header { background:#b22222; color:white; padding:0.5rem 0; position:sticky; top:0; z-index:1000; }
     header .container { display:flex; justify-content:space-between; align-items:center; width:90%; margin:auto; flex-wrap:wrap; }
-    nav a { margin-left:15px; font-weight:bold; }
+    header img { height:60px; }
+    nav a { margin-left:15px; font-weight:bold; color:#fff; }
     nav a.active, nav a:hover { border-bottom:2px solid #fff; }
 
     /* Sections */
@@ -42,7 +43,8 @@
   <!-- Header -->
   <header>
     <div class="container">
-      <h1>Coastal Corner</h1>
+      <!-- Logo -->
+      <img src="CBFE99FC-5310-47F3-8F55-0AB673327B8D.jpeg" alt="Coastal Corner Logo">
       <nav>
         <a href="#about">Home</a>
         <a href="#menu-page">Menu</a>
@@ -179,8 +181,25 @@
   <section id="location">
     <div class="container">
       <h2>Find Us</h2>
-      <p>#73, 8th Main Road, Vasanth Nagar,Near Medplus Medical, Bangalore - 560052</p>
-      <p>📞 7996889717/9731335765</p>
+      <p>
+        📍 <a href="https://maps.app.goo.gl/3eDTyK28FdiqXBH46?g_st=ac" target="_blank">
+          #73, 8th Main Road, Vasanth Nagar, Near Medplus Medical, Bangalore - 560052
+        </a>
+      </p>
+      <p>
+        📞 <a href="tel:+917996889717">7996889717</a>
+      </p>
+
+      <!-- Google Map Embed -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.095009118932!2d77.59224737506461!3d12.998551014381995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1671d373c7bb%3A0xb3d05f78db93215c!2sCoastal%20Corner!5e0!3m2!1sen!2sin!4v1694356745678!5m2!1sen!2sin"
+        width="100%" 
+        height="400" 
+        style="border:0; margin-top:1rem;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 
@@ -188,8 +207,8 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email: coastalcornervsn@gmail.com</p>
-      <p>Phone: 7996889717</p>
+      <p>Email: <a href="mailto:coastalcornervsn@gmail.com">coastalcornervsn@gamil.com.com</a></p>
+      <p>Phone: <a href="tel:+917996889717">7996889717</a></p>
     </div>
   </section>
 
@@ -198,6 +217,5 @@
     <p>© 2025 Coastal Corner. All Rights Reserved.</p>
   </footer>
 </body>
-
 </html>
 
