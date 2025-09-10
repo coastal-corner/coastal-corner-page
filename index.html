@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coastal Corner</title>
+
+  <!-- All Styles inside same file -->
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height:1.6; background:#fff8f0; color:#333; }
+    a { text-decoration:none; color:#fff; }
+
+    /* Header */
+    header { background:#b22222; color:white; padding:1rem 0; position:sticky; top:0; z-index:1000; }
+    header .container { display:flex; justify-content:space-between; align-items:center; width:90%; margin:auto; flex-wrap:wrap; }
+    nav a { margin-left:15px; font-weight:bold; }
+    nav a.active, nav a:hover { border-bottom:2px solid #fff; }
+
+    /* Sections */
+    section { padding:2rem 0; }
+    .container { width:90%; margin:auto; }
+
+    /* About & Location */
+    #about h2, #location h2, #contact h2 { color:#b22222; margin-bottom:1rem; }
+
+    /* Menu Page */
+    #menu-page h2 { text-align:center; margin-bottom:1rem; color:#b22222; }
+    .note { text-align:center; font-size:0.9rem; color:#666; margin-bottom:2rem; }
+    .menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+    .menu-column h3 { background:#b22222; color:#fff; padding:0.5rem; margin-bottom:0.5rem; border-radius:4px; }
+    .menu-column ul { list-style:none; }
+    .menu-column li { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dotted #ccc; }
+    .menu-column li span { font-weight:bold; color:#444; }
+
+    /* Footer */
+    footer { background:#b22222; color:white; text-align:center; padding:1rem; margin-top:2rem; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Coastal Corner</h1>
+      <nav>
+        <a href="#about">Home</a>
+        <a href="#menu-page">Menu</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Welcome to Coastal Corner</h2>
+      <p>For a tasteful seafood experience! Serving fresh coastal delicacies, chicken, and vegetarian dishes in the heart of Bangalore.</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu-page">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <p class="note">* Prices are in INR. 5% GST extra.</p>
+
+      <div class="menu-grid">
+        <!-- Column 1 -->
+        <div class="menu-column">
+          <h3>Fish Varieties</h3>
+          <ul>
+            <li>Anjal (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Pomfret (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Salmon (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Kaane (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Koduwai (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Bangad (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Mathi (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Silver (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Nang (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Hole Baige (Masala / Fry / Rava Fry / Tawa Fry)</li>
+            <li>Marwai (Masala Fry / Sukka)</li>
+            <li>Crab (Masala Fry / Sukka)</li>
+          </ul>
+
+          <h3>Bondas</h3>
+          <ul>
+            <li>Masala Fry / Naked Fry <span>₹280</span></li>
+            <li>Sukka / Pepper Dry / Chilli <span>₹300</span></li>
+          </ul>
+
+          <h3>Prawns</h3>
+          <ul>
+            <li>Pepper Fry <span>₹320</span></li>
+            <li>Sukka / Masala Fry <span>₹300</span></li>
+            <li>Rava Fry / Naked Fry / Chilli <span>₹300</span></li>
+          </ul>
+
+          <h3>Chicken Dry Starters</h3>
+          <ul>
+            <li>Chicken 65 B/L <span>₹170</span></li>
+            <li>Chicken Kabab <span>₹120</span></li>
+            <li>Chilli Chicken <span>₹150</span></li>
+            <li>Chicken Sukka <span>₹150</span></li>
+            <li>Chicken Manchurian B/L <span>₹170</span></li>
+            <li>Lemon Chicken B/L <span>₹170</span></li>
+            <li>Chicken Pepper Dry <span>₹150</span></li>
+            <li>Kundapura Chicken <span>₹150</span></li>
+            <li>Chicken Tawa B/L <span>₹250</span></li>
+          </ul>
+
+          <h3>Veg Starters</h3>
+          <ul>
+            <li>Paneer Manchurian / Chilly <span>₹180</span></li>
+            <li>Mushroom Manchurian / Chilly <span>₹160</span></li>
+            <li>Veg Fried Rice <span>₹120</span></li>
+            <li>Ghee Rice <span>₹140</span></li>
+            <li>Jeera Rice <span>₹120</span></li>
+            <li>Paneer Ghee Roast <span>₹250</span></li>
+          </ul>
+
+          <h3>Fried Rice</h3>
+          <ul>
+            <li>Chicken Fried Rice <span>₹140</span></li>
+            <li>Egg Fried Rice <span>₹120</span></li>
+            <li>Prawns Fried Rice <span>₹200</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="menu-column">
+          <h3>Egg</h3>
+          <ul>
+            <li>Egg Masala <span>₹80</span></li>
+            <li>Egg Fry <span>₹90</span></li>
+            <li>Egg Chilly <span>₹100</span></li>
+            <li>Egg Burji <span>₹60</span></li>
+            <li>Egg Omlet <span>₹50</span></li>
+            <li>Egg Half Boiled <span>₹40</span></li>
+            <li>Boiled Egg (2 No) <span>₹30</span></li>
+          </ul>
+
+          <h3>Biriyani</h3>
+          <ul>
+            <li>SPL Chicken Biriyani <span>₹150</span></li>
+            <li>Prawns Biriyani <span>₹250</span></li>
+            <li>Egg Biriyani <span>₹110</span></li>
+            <li>Biriyani Rice <span>₹70</span></li>
+          </ul>
+
+          <h3>Ghee Roast</h3>
+          <ul>
+            <li>Chicken Ghee Roast <span>₹300</span></li>
+            <li>Crab Ghee Roast (S) <span>₹350</span></li>
+            <li>Prawns Ghee Roast <span>₹350</span></li>
+            <li>Bondas Ghee Roast <span>₹350</span></li>
+          </ul>
+
+          <h3>Meals</h3>
+          <ul>
+            <li>Fish Curry Rice <span>₹160</span></li>
+            <li>Fish Meals <span>₹110</span></li>
+            <li>Rice with Curry <span>₹50</span></li>
+            <li>Chicken Meals <span>₹140</span></li>
+            <li>Chapathi - 2 No <span>₹60</span></li>
+            <li>Parota - 2 No <span>₹60</span></li>
+            <li>Neer Dose - 5 Pc <span>₹60</span></li>
+            <li>Kori Rotti <span>₹60</span></li>
+            <li>Boiled Rice Ganje Meals <span>₹50</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location">
+    <div class="container">
+      <h2>Find Us</h2>
+      <p>#73, 8th Main Road, Vasanth Nagar, Bangalore - 560052</p>
+      <p>📞 7996889717</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: info@coastalcorner.com</p>
+      <p>Phone: 7996889717</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Coastal Corner. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
